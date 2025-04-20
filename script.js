@@ -78,4 +78,18 @@ function calculateCube() {
   resultBox.style.display = "block"; // 
 }
 
+  function sendEmail() {
+    const message = document.getElementById('message').value;
+    const email = 'p.eng.a.elattar@gmail.com';
+    const subject = 'Message from website';
+    const body = encodeURIComponent(message);
+    window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+  }
+
+  function sendWhatsApp() {
+    const message = document.getElementById('message').value;
+    const phoneNumber = '201116779036';
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  }
 
