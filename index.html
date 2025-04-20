@@ -110,13 +110,15 @@
       <section id="contact" >
         <h2>Contact Us</h2>
 
-        <fieldset>
-          <legend>Send a Message</legend>
-          <textarea placeholder=" Enter Your message..."></textarea>
-          <button onclick="window.location.href='mailto:p.eng.a.elattar@gmail.com'">Send Email</button>
-          <button onclick="window.open('https://wa.me/201116779036')">Send WhatsApp</button>
-        </fieldset>
-      </section>
+        
+ <fieldset>
+  <legend>Send a Message</legend>
+  <textarea id="message" placeholder="Enter your message..."></textarea>
+  <button onclick="sendEmail()">Send Email</button>
+  <button onclick="sendWhatsApp()">Send WhatsApp</button>
+</fieldset>
+
+
   
 
       <footer id="footindex">
